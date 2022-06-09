@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/6a4129c8e3.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- CSS File -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Favicon -->
+	<link rel="icon" href="multimedia/logo.png">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<title>CityStore</title>
+</head>
+
+<body>
+	<header>
+		<!-- Empieza barra de menú -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-primary" id="menu">
+			<div class="container-fluid">
+				<a class="navbar-brand fw-bold fs-2 text-dark" href="index.html">CityStore</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item nav__li">
+							<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item nav__li">
+							<a class="nav-link" href="productos.html">Productos</a>
+						</li>
+						<li class="nav-item nav__li">
+							<a class="nav-link" href="descuentos.html">Descuentos</a>
+						</li>
+						<li class="nav-item nav__li">
+							<a class="nav-link" href="carrito.html">Carrito</a>
+						</li>
+						<li class="nav-item nav__li">
+							<a class="nav-link" href="contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Termina barra de menú -->
+	<!-- Empieza main -->
+	<section class="section__carrito">
+		<!-- Empieza el carrito -->
+		<h1 class="fw-bold">Tu carrito:</h1>
+		<!-- Empieza productos del carrito-->
+		<table border="1" cellpadding="15" cellspacing="0" class="carrito table table-light">
+			<th>Producto</th>
+			<th>Cantidad:</th>
+			<th>Precio</th>
+			<tr>
+				<td></td>
+				<td>
+					<form>
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</form>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		<!-- Termina productos del carrito -->
+		<!-- Empieza tipo de envio-->
+		<table border="1" cellpadding="15" cellspacing="0" class="carrito table table-light">
+			<th>Envio</th>
+			<th>Codigo Postal</th>
+			<th>Precio</th>
+			<tr>
+				<td>
+					<form>
+						<div>Correo Oca:</div>
+						<label for="domicilio">Domicilio</label>
+						<input type="radio" name="envio" value="domicilio">
+						<label for="sucursal">Sucursal</label>
+						<input type="radio" name="envio" value="sucursal">
+						<div>Correo Andreani:</div>
+						<label for="domicilio">Domicilio</label>
+						<input type="radio" name="envio" value="domicilio">
+						<label for="sucursal">Sucursal</label>
+						<input type="radio" name="envio" value="sucursal">
+						<div>Mensajeria:</div>
+						<label for="domicilio">Domicilio</label>
+						<input type="radio" name="envio" value="domicilio">
+						<label for="sucursal">Sucursal</label>
+						<input type="radio" name="envio" value="sucursal">
+					</form>
+				</td>
+				<td>
+					<form>
+						<input type="text">
+					</form>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		<!-- Termina tipo de envio-->
+		<!-- Empieza forma de pago-->
+		<table border="1" cellpadding="15" cellspacing="0" class="carrito table table-light">
+			<th>Metodo de Pago:</th>
+			<th>Precio Final:</th>
+			<tr>
+				<td>
+					<form>
+						<input type="radio" name="pago" value="deposito">
+						<label for="deposito">Deposito o Transferencia Bancaria</label><br>
+						<input type="radio" name="pago" value="mercado-pago">
+						<label for="mercado-pago">Mercadopago - Tarjetas Online, PagoFacil, RapiPago</label><br>
+						<input type="radio" name="pago" value="tarjetas">
+						<label for="tarjetas">Tarjetas de Credito o Debito - Visa o MasterCard</label>
+					</form>
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		<!-- Termina forma de pago-->
+		<!-- Termina el carrito -->
+	</section>
+	<!-- Termina main -->
+	<!-- Empieza footer -->
+	<footer class="footer bg-primary w-100 d-flex justify-content-around">
+		<section class="ayuda">
+			<p class="ayuda__p fs-4">Ayuda</p>
+			<p>Si necesitas saber algo <a href="contacto.html" class="ayuda__contacto">Contactanos</a></p>
+		</section>
+		<section class="redes">
+			<p class="redes__p fs-4">Redes:</p>
+			<ul class="redes__ul">
+				<li class="redes__ul--li d-inline-block"><i class="fa-brands fa-instagram-square"></i><a href="https://www.instagram.com/maurii_s1/" target="_BLANK" class="text-decoration-none">Instagram</a></li>
+				<li class="redes__ul--li d-inline-block"><i class="fa-brands fa-twitter-square"></i><a href="https://twitter.com/zMauriiS" target="_BLANK" class="text-decoration-none">Twitter</a></li>
+			</ul>
+		</section>
+	</footer>
+	<!-- Termina footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
